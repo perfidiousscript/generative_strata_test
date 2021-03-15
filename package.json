@@ -7,6 +7,6 @@
   },
   "license": "UNLICENSED",
   "scripts": {
-    "start": "yarn http-server"
+    "start": "npm http-server"
   }
 }
