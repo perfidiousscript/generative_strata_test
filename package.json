@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "http-server": "^0.12.3",
     "three": "^0.126.1",
     "webpack": "^5.25.0",
@@ -7,6 +9,6 @@
   },
   "license": "UNLICENSED",
   "scripts": {
-    "start": "npm http-server ./dist"
+    "start": "node index.js"
   }
 }

@@ -53,9 +53,7 @@ function displayObj() {
   {
     const planeSize = 40;
     const loader = new TextureLoader();
-    const texture = loader.load(
-      "http://localhost:8080/resources/images/checker.png"
-    );
+    const texture = loader.load("resources/images/checker.png");
     texture.wrapS = RepeatWrapping;
     texture.wrapT = RepeatWrapping;
     texture.magFilter = NearestFilter;
@@ -99,9 +97,7 @@ function displayObj() {
       side: DoubleSide,
     });
     const objLoader = new OBJLoader();
-    objLoader.load("http://localhost:8080/objects/GS_Obj_Test.obj", function (
-      obj
-    ) {
+    objLoader.load("objects/GS_Obj_Test.obj", function (obj) {
       obj.traverse(
         function (child) {
           if (child instanceof Mesh) {
